@@ -1,0 +1,20 @@
+{
+    "id": "group-membership",
+    "name": "Group Membership",
+    "description": "Adds the possibility for certain groups to allow users to become member themselves",
+    "keywords": [
+    ],
+    "version": "0.1",
+    "humhub": {
+        "minVersion": "1.6"
+    },
+    "homepage": "https://cuzy.app",
+    "authors": [
+        {
+            "name": "Marc Farre",
+            "homepage": "https://marc.fun",
+            "role": "Developer"
+        }
+    ],
+    "screenshots": []
+}
