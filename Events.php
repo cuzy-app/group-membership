@@ -14,6 +14,10 @@ use humhub\modules\ui\menu\MenuLink;
 
 class Events
 {
+    /**
+     * Replaces directory/directory/groups menu by group-membership/directory/groups
+     * @param $events ActionEvent
+     */
     public static function onDirectoryMenuInit($event)
     {
     	$menu = $event->sender;
@@ -33,5 +37,20 @@ class Events
                 'isActive' => MenuLink::isActiveState('group-membership', 'directory', 'groups')
             ]));
         }
+    }
+
+
+    /**
+     * Redirect directory/directory/groups to group-membership/directory/groups
+     * @param $events ActionEvent
+     */
+    public static function onDirectoryBeforeAction($event)
+    {
+        /** @var ActionEvent $event */
+
+        if ($event->action->id === 'groups') {
+            $event->result = Yii::$app->response->redirect('/group-membership/directory/groups');
+        }
+        
     }
 }
