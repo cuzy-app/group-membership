@@ -2,7 +2,7 @@
 /**
  * Group membership
  * @link https://github.com/cuzy-app/humhub-modules-group-membership
- * @license https://github.com/cuzy-app/humhub-modules-group-membership/tree/master/docs/LICENCE.md
+ * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/main/docs/LICENCE.md
  * @author [Marc Farre](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
@@ -12,9 +12,9 @@ use Yii;
 use humhub\modules\admin\components\BaseAdminPermission;
 
 /**
- * ManageGlobalSurvey Permission allows to created, edit and delete global surveys
+ * UsersManageTheirMembership permission allows users to manage their membership to this group
  */
-class usersManageTheirMembership extends BaseAdminPermission
+class UsersManageTheirMembership extends BaseAdminPermission
 {
     /**
      * @inheritdoc

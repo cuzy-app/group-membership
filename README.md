@@ -7,7 +7,7 @@ Adds the possibility for certain groups to allow users to become member themselv
 
 - Admin can manage groups permissions to allow users to become member themselves
 - The groups directory page is replaced by the one of this module which adds a button for authorized groups allowing a user to become member himself
-- User can remove membership himself to a group, except if member of only one group
+- User can remove his membership himself to a group, except if member of only one group
 
 
 ## How to use and configuration
@@ -23,3 +23,8 @@ https://www.cuzy.app/
 ## Repository
 
 https://github.com/cuzy-app/humhub-modules-group-membership
+
+
+## Licence
+
+https://github.com/cuzy-app/humhub-modules-group-membership/blob/main/docs/LICENCE.md

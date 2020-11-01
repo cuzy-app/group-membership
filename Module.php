@@ -2,7 +2,7 @@
 /**
  * Group membership
  * @link https://github.com/cuzy-app/humhub-modules-group-membership
- * @license https://github.com/cuzy-app/humhub-modules-group-membership/tree/master/docs/LICENCE.md
+ * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/main/docs/LICENCE.md
  * @author [Marc Farre](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
@@ -10,7 +10,7 @@ namespace humhub\modules\groupMembership;
 
 use Yii;
 use yii\helpers\Url;
-use humhub\modules\groupMembership\permissions\usersManageTheirMembership;
+use humhub\modules\groupMembership\permissions\UsersManageTheirMembership;
 
 class Module extends \humhub\components\Module
 {
@@ -42,7 +42,7 @@ class Module extends \humhub\components\Module
     {
         if ($contentContainer === null) {
             return [
-                new permissions\usersManageTheirMembership,
+                new permissions\UsersManageTheirMembership,
             ];
         }
         return [];

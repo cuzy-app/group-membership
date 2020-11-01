@@ -1,6 +1,6 @@
 <?php
 /* @var $this \yii\web\View */
-/* @var $groups humhub\modules\user\models\Group[] */
+/* @var $groups humhub\modules\groupMembership\models\Group[] */
 
 use yii\helpers\Html;
 use yii\helpers\Url;
@@ -15,32 +15,28 @@ use humhub\modules\directory\widgets\GroupUsers;
 
     <div class="panel-body">
         <?php foreach ($groups as $group) : ?>
-            <?php
-            $permission = Yii::$app->user->permissionManager->getById('users_manage_their_membership', 'group-membership');
-            $canManageHisMembership = Yii::$app->user->permissionManager->getGroupState($group->id, $permission);
-            ?>
-
-            <?php if ($canManageHisMembership): ?>
+            
+            <?php if ($group->canSelfBecomeMember()): ?>
                 <div class="pull-right">
+                    <?= Html::a(
+                        Yii::t('GroupMembershipModule.base', 'Become member'),
+                        Url::to(['add-membership', 'groupId' => $group->id]),
+                        [
+                            'class' => 'btn btn-primary btn-sm',
+                        ]
+                    ) ?>
+                </div>
+            <?php endif ?>
 
-                    <?php if ($group->isMember(Yii::$app->user->identity)): ?>
-                        <?= Html::a(
-                            Yii::t('GroupMembershipModule.base', 'Cancel membership'),
-                            Url::to(['cancel-membership', 'groupId' => $group->id]),
-                            [
-                                'class' => 'btn btn-info btn-sm',
-                            ]
-                        ) ?>
-                    <?php else: ?>
-                        <?= Html::a(
-                            Yii::t('GroupMembershipModule.base', 'Become member'),
-                            Url::to(['add-membership', 'groupId' => $group->id]),
-                            [
-                                'class' => 'btn btn-primary btn-sm',
-                            ]
-                        ) ?>
-                    <?php endif ?>
-
+            <?php if ($group->canSelfRemoveMembership()): ?>
+                <div class="pull-right">
+                    <?= Html::a(
+                        Yii::t('GroupMembershipModule.base', 'Cancel membership'),
+                        Url::to(['cancel-membership', 'groupId' => $group->id]),
+                        [
+                            'class' => 'btn btn-info btn-sm',
+                        ]
+                    ) ?>
                 </div>
             <?php endif ?>
 
