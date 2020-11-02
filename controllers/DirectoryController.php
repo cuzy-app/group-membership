@@ -21,7 +21,7 @@ class DirectoryController extends Controller
     public function actionAddMembership($groupId)
     {
         $group = Group::findOne($groupId);
-        if ($group !== null) {
+        if ($group !== null && $group->canSelfBecomeMember()) {
             $group->addUser(Yii::$app->user->identity);
         }
         return $this->redirect(['groups']);
@@ -31,7 +31,7 @@ class DirectoryController extends Controller
     public function actionCancelMembership($groupId)
     {
         $group = Group::findOne($groupId);
-        if ($group !== null) {
+        if ($group !== null && $group->canSelfRemoveMembership()) {
             $group->removeUser(Yii::$app->user->identity);
         }
         return $this->redirect(['groups']);
