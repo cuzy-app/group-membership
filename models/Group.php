@@ -16,6 +16,10 @@ class Group extends \humhub\modules\user\models\Group
 	 * User is allowed to become member of this group himself
 	 */
 	public function canSelfBecomeMember ($user = null) {
+		if (Yii::$app->user->isGuest) {
+			return false;
+		}
+
         if (!$this->usersManageTheirMembership()) {
         	return false;
         }
@@ -28,6 +32,10 @@ class Group extends \humhub\modules\user\models\Group
 	 * User is allowed to remove his membership himself of this group himself
 	 */
 	public function canSelfRemoveMembership ($user = null) {
+		if (Yii::$app->user->isGuest) {
+			return false;
+		}
+		
         if (!$this->usersManageTheirMembership()) {
         	return false;
         }
@@ -37,7 +45,7 @@ class Group extends \humhub\modules\user\models\Group
 		}
 
 		// Cannot remove his membership if member of only this group
-        if (count($user->groups) == 1) {
+        if (count($user->groups) <= 1) {
         	return false;
         }
 
@@ -49,6 +57,10 @@ class Group extends \humhub\modules\user\models\Group
 	 * Users are allowed to manage their membership to this group
 	 */
 	public function usersManageTheirMembership () {
+		if (Yii::$app->user->isGuest) {
+			return false;
+		}
+		
         $permission = Yii::$app->user->permissionManager->getById('users_manage_their_membership', 'group-membership');
         return Yii::$app->user->permissionManager->getGroupState($this->id, $permission);
 	}
