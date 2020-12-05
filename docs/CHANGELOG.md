@@ -1,6 +1,11 @@
 Changelog
 =========
 
+V1.0.3 (December, 5, 2020)
+--------------------
+- Fix: Now works also when pretty URL are not not enabled (https://docs.humhub.org/docs/admin/installation/#pretty-urls)
+
+
 V1.0.2 (November, 29, 2020)
 --------------------
 - Fix: Now works also when not connected (user is guest)

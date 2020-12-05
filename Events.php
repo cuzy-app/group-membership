@@ -49,7 +49,7 @@ class Events
         /** @var ActionEvent $event */
 
         if ($event->action->id === 'groups') {
-            $event->result = Yii::$app->response->redirect('/group-membership/directory/groups');
+            $event->result = Yii::$app->response->redirect(['/group-membership/directory/groups']);
         }
         
     }
