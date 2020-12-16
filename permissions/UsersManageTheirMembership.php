@@ -9,12 +9,12 @@
 namespace humhub\modules\groupMembership\permissions;
 
 use Yii;
-use humhub\modules\admin\components\BaseAdminPermission;
+use humhub\modules\user\models\User;
 
 /**
  * UsersManageTheirMembership permission allows users to manage their membership to this group
  */
-class UsersManageTheirMembership extends BaseAdminPermission
+class UsersManageTheirMembership extends \humhub\libs\BasePermission
 {
     /**
      * @inheritdoc
@@ -26,6 +26,13 @@ class UsersManageTheirMembership extends BaseAdminPermission
      */
     protected $moduleId = 'group-membership';
 
+    /**
+     * @inheritdoc
+     */
+    protected $fixedGroups = [
+        User::USERGROUP_USER,
+        User::USERGROUP_GUEST
+    ];
 
     public function __construct($config = [])
     {
