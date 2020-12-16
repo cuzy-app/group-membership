@@ -1,6 +1,10 @@
 Changelog
 =========
 
+V1.0.4 (December, 16, 2020)
+--------------------
+- Fix #1: Permission issue: Exclude Admin group (thanks @ArchBlood)
+
 V1.0.3 (December, 5, 2020)
 --------------------
 - Fix: Now works also when pretty URL are not not enabled (https://docs.humhub.org/docs/admin/installation/#pretty-urls)
