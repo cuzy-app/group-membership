@@ -14,7 +14,7 @@ use humhub\modules\directory\widgets\GroupUsers;
     </div>
 
     <div class="panel-body">
-        <?php foreach ($groups as $group) : ?>
+        <?php foreach ($groups as $group): ?>
             
             <?php if ($group->canSelfBecomeMember()): ?>
                 <div class="pull-right">
@@ -26,7 +26,7 @@ use humhub\modules\directory\widgets\GroupUsers;
                         ]
                     ) ?>
                 </div>
-            <?php endif ?>
+            <?php endif; ?>
 
             <?php if ($group->canSelfRemoveMembership()): ?>
                 <div class="pull-right">
@@ -38,7 +38,7 @@ use humhub\modules\directory\widgets\GroupUsers;
                         ]
                     ) ?>
                 </div>
-            <?php endif ?>
+            <?php endif; ?>
 
             <h1><?= Html::encode($group->name); ?></h1>
 

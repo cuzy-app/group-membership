@@ -3,7 +3,7 @@
  * Group membership
  * @link https://github.com/cuzy-app/humhub-modules-group-membership
  * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/main/docs/LICENCE.md
- * @author [Marc Farre](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
+ * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
 namespace  humhub\modules\groupMembership;
@@ -46,8 +46,6 @@ class Events
      */
     public static function onDirectoryBeforeAction($event)
     {
-        /** @var ActionEvent $event */
-
         if ($event->action->id === 'groups') {
             $event->result = Yii::$app->response->redirect(['/group-membership/directory/groups']);
         }

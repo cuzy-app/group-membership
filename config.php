@@ -3,7 +3,7 @@
  * Group membership
  * @link https://github.com/cuzy-app/humhub-modules-group-membership
  * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/main/docs/LICENCE.md
- * @author [Marc Farre](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
+ * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
 use humhub\modules\groupMembership\Events;
@@ -18,10 +18,12 @@ return [
         [
         	'humhub\modules\directory\widgets\Menu',
         	Menu::EVENT_INIT,
-        	[Events::class, 'onDirectoryMenuInit']],
+        	[Events::class, 'onDirectoryMenuInit']
+        ],
         [
         	DirectoryController::class,
         	DirectoryController::EVENT_BEFORE_ACTION,
-        	[Events::class, 'onDirectoryBeforeAction']]
+        	[Events::class, 'onDirectoryBeforeAction']
+        ],
 	],
 ];
