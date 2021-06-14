@@ -4,4 +4,8 @@ return array (
   'Become member' => 'Liity jäseneksi',
   'Cancel membership' => 'Peruuta jäsenyys',
   'Group membership' => 'Ryhmäjäsenyys',
+  'Groups of which I am a member' => 'Ryhmät, joiden jäsen olen',
+  'My Groups' => 'Omat ryhmät',
+  'My groups' => 'Ryhmäni',
+  'Others groups I can join' => 'Muut ryhmät, joihin voin liittyä',
 );

@@ -4,4 +4,8 @@ return array (
   'Become member' => 'Werden Sie Mitglied',
   'Cancel membership' => 'Mitgliedschaft kündigen',
   'Group membership' => 'Gruppenmitgliedschaft',
+  'Groups of which I am a member' => 'Gruppen, in denen ich Mitglied bin',
+  'My Groups' => 'Meine Gruppen',
+  'My groups' => 'Meine Gruppen',
+  'Others groups I can join' => 'Andere Gruppen, denen ich beitreten kann',
 );

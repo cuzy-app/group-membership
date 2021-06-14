@@ -4,9 +4,9 @@
     "description": "Adds the possibility for certain groups to allow users to become member themselves",
     "keywords": [
     ],
-    "version": "1.0.4",
+    "version": "1.1",
     "humhub": {
-        "minVersion": "1.6"
+        "minVersion": "1.8"
     },
     "homepage": "https://cuzy.app",
     "authors": [

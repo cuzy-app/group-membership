@@ -4,4 +4,8 @@ return array (
   'Become member' => 'A\'zo bo\'ling',
   'Cancel membership' => 'A\'zolikni bekor qiling',
   'Group membership' => 'Guruhga a\'zolik',
+  'Groups of which I am a member' => 'Men a\'zo bo\'lgan guruhlar',
+  'My Groups' => 'Mening guruhlarim',
+  'My groups' => 'Mening guruhlarim',
+  'Others groups I can join' => 'Boshqa guruhlarga qo\'shilishim mumkin',
 );

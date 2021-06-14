@@ -4,4 +4,8 @@ return array (
   'Become member' => 'Стать участником',
   'Cancel membership' => 'Отменить членство',
   'Group membership' => 'Членство в группе',
+  'Groups of which I am a member' => 'Группы, в которых я состою',
+  'My Groups' => 'Мои группы',
+  'My groups' => 'Мои группы',
+  'Others groups I can join' => 'Другие группы, к которым я могу присоединиться',
 );

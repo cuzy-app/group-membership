@@ -4,4 +4,8 @@ return array (
   'Become member' => 'Legyen tag',
   'Cancel membership' => 'Törölje a tagságot',
   'Group membership' => 'Csoporttagság',
+  'Groups of which I am a member' => 'Csoportok, amelyeknek tagja vagyok',
+  'My Groups' => 'Saját csoportok',
+  'My groups' => 'A csoportjaim',
+  'Others groups I can join' => 'Más csoportokhoz csatlakozhatok',
 );

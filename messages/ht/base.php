@@ -4,4 +4,8 @@ return array (
   'Become member' => 'Vin manm',
   'Cancel membership' => 'Anile manm',
   'Group membership' => 'Manm gwoup la',
+  'Groups of which I am a member' => 'Gwoup kote mwen se yon manm',
+  'My Groups' => 'Gwoup mwen yo',
+  'My groups' => 'Gwoup mwen yo',
+  'Others groups I can join' => 'Lòt gwoup mwen ka rantre',
 );

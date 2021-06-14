@@ -7,8 +7,7 @@
  */
 
 use humhub\modules\groupMembership\Events;
-use humhub\modules\ui\menu\widgets\Menu;
-use humhub\modules\directory\controllers\DirectoryController;
+use humhub\modules\user\widgets\AccountMenu;
 
 return [
 	'id' => 'group-membership',
@@ -16,14 +15,9 @@ return [
 	'namespace' => 'humhub\modules\groupMembership',
 	'events' => [
         [
-        	'humhub\modules\directory\widgets\Menu',
-        	Menu::EVENT_INIT,
-        	[Events::class, 'onDirectoryMenuInit']
-        ],
-        [
-        	DirectoryController::class,
-        	DirectoryController::EVENT_BEFORE_ACTION,
-        	[Events::class, 'onDirectoryBeforeAction']
+            'class' => AccountMenu::class,
+            'event' => AccountMenu::EVENT_INIT,
+            'callback' => [Events::class, 'onUserAccountMenuInit']
         ],
 	],
 ];

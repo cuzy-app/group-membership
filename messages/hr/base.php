@@ -4,4 +4,8 @@ return array (
   'Become member' => 'Postanite član',
   'Cancel membership' => 'Otkaži članstvo',
   'Group membership' => 'Članstvo u grupi',
+  'Groups of which I am a member' => 'Grupe čiji sam član',
+  'My Groups' => 'Moje grupe',
+  'My groups' => 'Moje grupe',
+  'Others groups I can join' => 'Drugim skupinama kojima se mogu pridružiti',
 );

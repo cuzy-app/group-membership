@@ -4,4 +4,8 @@ return array (
   'Become member' => 'メンバーになる',
   'Cancel membership' => 'メンバーシップをキャンセルする',
   'Group membership' => 'グループメンバーシップ',
+  'Groups of which I am a member' => '私が所属している団体',
+  'My Groups' => '私のグループ',
+  'My groups' => '私のグループ',
+  'Others groups I can join' => '私が参加できる他のグループ',
 );

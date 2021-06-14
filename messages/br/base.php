@@ -5,4 +5,8 @@ return [
     'Become member' => '',
     'Cancel membership' => '',
     'Group membership' => '',
+    'Groups of which I am a member' => '',
+    'My Groups' => '',
+    'My groups' => '',
+    'Others groups I can join' => '',
 ];

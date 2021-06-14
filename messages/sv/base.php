@@ -4,4 +4,8 @@ return array (
   'Become member' => 'Bli medlem',
   'Cancel membership' => 'Avbryt medlemskap',
   'Group membership' => 'Gruppmedlemskap',
+  'Groups of which I am a member' => 'Grupper som jag är medlem i',
+  'My Groups' => 'Mina grupper',
+  'My groups' => 'Mina grupper',
+  'Others groups I can join' => 'Andra grupper jag kan gå med i',
 );

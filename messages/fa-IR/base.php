@@ -4,4 +4,8 @@ return array (
   'Become member' => 'عضو شدن',
   'Cancel membership' => 'لغو عضویت',
   'Group membership' => 'عضویت در گروه',
+  'Groups of which I am a member' => 'گروههایی که من عضو آنها هستم',
+  'My Groups' => 'گروه های من',
+  'My groups' => 'گروه های من',
+  'Others groups I can join' => 'گروه های دیگری که می توانم به آنها بپیوندم',
 );
