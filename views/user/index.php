@@ -37,20 +37,23 @@ use yii\helpers\Html;
             </tr>
         <?php endforeach; ?>
         </table>
-        <br>
-        <h4><?= Yii::t('GroupMembershipModule.base', 'Others groups I can join'); ?></h4>
 
-        <table class="table table-striped table-hover">
-            <?php foreach ($groupsCanJoin as $group): ?>
-                <tr>
-                    <td>
-                        <?= Button::success(Yii::t('GroupMembershipModule.base', 'Become member'))->link(['add-membership', 'groupId' => $group->id])->sm()->right()->confirm() ?>
-                        <strong><?= Html::encode($group->name); ?></strong>
-                        <br>
-                        <span class="hint-block"><?= Html::encode($group->description); ?></span>
-                    </td>
-                </tr>
-            <?php endforeach; ?>
-        </table>
+        <?php if ($groupsCanJoin): ?>
+            <br>
+            <h4><?= Yii::t('GroupMembershipModule.base', 'Others groups I can join'); ?></h4>
+
+            <table class="table table-striped table-hover">
+                <?php foreach ($groupsCanJoin as $group): ?>
+                    <tr>
+                        <td>
+                            <?= Button::success(Yii::t('GroupMembershipModule.base', 'Become member'))->link(['add-membership', 'groupId' => $group->id])->sm()->right()->confirm() ?>
+                            <strong><?= Html::encode($group->name); ?></strong>
+                            <br>
+                            <span class="hint-block"><?= Html::encode($group->description); ?></span>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        <?php endif; ?>
     </div>
 </div>

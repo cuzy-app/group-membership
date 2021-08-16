@@ -9,6 +9,7 @@
 use humhub\modules\groupMembership\Events;
 use humhub\modules\user\widgets\AccountMenu;
 
+/** @noinspection MissedFieldInspection */
 return [
 	'id' => 'group-membership',
 	'class' => 'humhub\modules\groupMembership\Module',
