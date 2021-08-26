@@ -1,5 +1,5 @@
 <?php
 return array (
-  'Users are allowed to become member of this group (or exit) themselves' => 'A felhasználók maguk e csoport tagjai lehetnek (vagy kiléphetnek)',
-  'Users manage their membership' => 'A felhasználók kezelik tagságukat',
+  'Users are allowed to become a member of this group (or exit) themselves' => 'A felhasználók maguk is beléphetnek a csoportba (vagy kiléphetnek)',
+  'Users can become a member of this group' => 'A felhasználók tagjai lehetnek ennek a csoportnak',
 );

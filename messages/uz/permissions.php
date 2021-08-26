@@ -1,5 +1,5 @@
 <?php
 return array (
-  'Users are allowed to become member of this group (or exit) themselves' => 'Foydalanuvchilar ushbu guruhga o\'zlari a\'zo bo\'lishlari (yoki chiqishlari) mumkin',
-  'Users manage their membership' => 'Foydalanuvchilar o\'z a\'zolarini boshqaradilar',
+  'Users are allowed to become a member of this group (or exit) themselves' => 'Foydalanuvchilar o\'zlari ushbu guruhga a\'zo bo\'lishlari (yoki chiqishlari) mumkin',
+  'Users can become a member of this group' => 'Foydalanuvchilar ushbu guruhga a\'zo bo\'lishlari mumkin',
 );

@@ -1,5 +1,5 @@
 <?php
 return array (
-  'Users are allowed to become member of this group (or exit) themselves' => 'Brugere har lov til selv at blive medlem af denne gruppe (eller afslutte)',
-  'Users manage their membership' => 'Brugere administrerer deres medlemskab',
+  'Users are allowed to become a member of this group (or exit) themselves' => 'Brugere må selv blive medlem af denne gruppe (eller afslutte)',
+  'Users can become a member of this group' => 'Brugere kan blive medlem af denne gruppe',
 );

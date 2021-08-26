@@ -1,5 +1,5 @@
 <?php
 return array (
-  'Users are allowed to become member of this group (or exit) themselves' => 'Користувачам дозволяється стати членами цієї групи (або вийти) самостійно',
-  'Users manage their membership' => 'Користувачі керують своїм членством',
+  'Users are allowed to become a member of this group (or exit) themselves' => 'Користувачам дозволено самостійно стати членом цієї групи (або вийти)',
+  'Users can become a member of this group' => 'Користувачі можуть стати учасниками цієї групи',
 );

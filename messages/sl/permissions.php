@@ -1,5 +1,5 @@
 <?php
 return array (
-  'Users are allowed to become member of this group (or exit) themselves' => 'Uporabniki lahko sami postanejo člani te skupine (ali izstopijo)',
-  'Users manage their membership' => 'Uporabniki upravljajo svoje članstvo',
+  'Users are allowed to become a member of this group (or exit) themselves' => 'Uporabniki lahko sami postanejo član te skupine (ali izstopijo)',
+  'Users can become a member of this group' => 'Uporabniki lahko postanejo član te skupine',
 );

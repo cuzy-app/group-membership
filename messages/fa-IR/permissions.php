@@ -1,5 +1,5 @@
 <?php
 return array (
-  'Users are allowed to become member of this group (or exit) themselves' => 'کاربران مجاز هستند خودشان عضو این گروه شوند (یا از آن خارج شوند)',
-  'Users manage their membership' => 'کاربران عضویت خود را مدیریت می کنند',
+  'Users are allowed to become a member of this group (or exit) themselves' => 'کاربران مجازند خودشان عضو این گروه شوند (یا خارج شوند)',
+  'Users can become a member of this group' => 'کاربران می توانند عضو این گروه شوند',
 );

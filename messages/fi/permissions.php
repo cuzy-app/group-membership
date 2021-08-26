@@ -1,5 +1,5 @@
 <?php
 return array (
-  'Users are allowed to become member of this group (or exit) themselves' => 'Käyttäjät voivat tulla itse tämän ryhmän jäseniksi (tai poistua niistä)',
-  'Users manage their membership' => 'Käyttäjät hallitsevat jäsenyyttään',
+  'Users are allowed to become a member of this group (or exit) themselves' => 'Käyttäjät voivat liittyä tähän ryhmään (tai poistua) itse',
+  'Users can become a member of this group' => 'Käyttäjät voivat liittyä tähän ryhmään',
 );

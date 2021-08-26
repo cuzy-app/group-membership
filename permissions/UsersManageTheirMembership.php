@@ -38,8 +38,8 @@ class UsersManageTheirMembership extends \humhub\libs\BasePermission
     {
         parent::__construct($config);
 
-        $this->title = Yii::t('GroupMembershipModule.permissions', 'Users manage their membership');
-        $this->description = Yii::t('GroupMembershipModule.permissions', 'Users are allowed to become member of this group (or exit) themselves');
+        $this->title = Yii::t('GroupMembershipModule.permissions', 'Users can become a member of this group');
+        $this->description = Yii::t('GroupMembershipModule.permissions', 'Users are allowed to become a member of this group (or exit) themselves');
     }
 
 }
