@@ -1,6 +1,11 @@
 Changelog
 =========
 
+unpublished
+--------------------
+- Enh: More explicit permission title and description
+
+
 1.1 (June 14, 2021)
 --------------------
 - Enh: As directory module has been disabled in Humhub 1.9, self managing groups is now in the user's account settings
