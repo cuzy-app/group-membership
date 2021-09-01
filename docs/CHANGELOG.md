@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1.1 (September 1, 2021)
+1.2 (September 1, 2021)
 --------------------
 - Enh: More explicit permission title and description
 - Enh: Better presentation (card) of the users groups (in the account settings)
