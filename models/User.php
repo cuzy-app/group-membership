@@ -25,6 +25,9 @@ class User extends \humhub\modules\user\models\User
     }
 
 
+    /**
+     * @return Group[]
+     */
     public function getGroupsCanJoin()
     {
         // Search for groups shown in directory

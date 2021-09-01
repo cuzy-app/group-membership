@@ -8,6 +8,7 @@
 
 namespace humhub\modules\groupMembership\models;
 
+use humhub\modules\user\models\User;
 use Yii;
 
 class Group extends \humhub\modules\user\models\Group
@@ -19,16 +20,19 @@ class Group extends \humhub\modules\user\models\Group
      * @throws \yii\base\InvalidConfigException
      */
 	public function canSelfBecomeMember ($user = null) {
-		if (Yii::$app->user->isGuest) {
-			return false;
-		}
+        if ($user === null) {
+            if (Yii::$app->user->isGuest) {
+                return false;
+            }
+            $user = Yii::$app->user->identity;
+        }
 
         if (!$this->usersManageTheirMembership()) {
         	return false;
         }
 
         // Can become member if not yet member
-        return !$this->isMember(($user === null) ? Yii::$app->user->identity : $user);
+        return !$this->isMember($user);
 	}
 
     /**
@@ -38,9 +42,12 @@ class Group extends \humhub\modules\user\models\Group
      * @throws \yii\base\InvalidConfigException
      */
 	public function canSelfRemoveMembership ($user = null) {
-		if (Yii::$app->user->isGuest) {
-			return false;
-		}
+        if ($user === null) {
+            if (Yii::$app->user->isGuest) {
+                return false;
+            }
+            $user = Yii::$app->user->identity;
+        }
 		
         if (!$this->usersManageTheirMembership()) {
         	return false;
