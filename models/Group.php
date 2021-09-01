@@ -15,7 +15,7 @@ class Group extends \humhub\modules\user\models\Group
 {
     /**
      * User is allowed to become member of this group himself
-     * @param null $user
+     * @param null|User $user
      * @return bool
      * @throws \yii\base\InvalidConfigException
      */
@@ -31,13 +31,13 @@ class Group extends \humhub\modules\user\models\Group
         	return false;
         }
 
-        // Can become member if not yet member
+        // Can become member if not yet a member
         return !$this->isMember($user);
 	}
 
     /**
      * User is allowed to remove his membership himself of this group himself
-     * @param null $user
+     * @param null|User $user
      * @return bool
      * @throws \yii\base\InvalidConfigException
      */
@@ -53,16 +53,12 @@ class Group extends \humhub\modules\user\models\Group
         	return false;
         }
 
-		if ($user === null) {
-			$user = Yii::$app->user->identity;
-		}
-
 		// Cannot remove his membership if member of only this group
         if ($user->getGroups()->count() <= 1) {
         	return false;
         }
 
-        // Can remove his membership if already member
+        // Can remove his membership if already a member
         return $this->isMember($user);
 	}
 

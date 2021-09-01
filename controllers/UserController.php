@@ -19,8 +19,8 @@ class UserController extends BaseAccountController
 {
     /**
      * Renders the groups view for the module
-     *
      * @return string
+     * @throws HttpException
      */
     public function actionIndex()
     {
@@ -35,6 +35,11 @@ class UserController extends BaseAccountController
     }
 
 
+    /**
+     * @param $groupId
+     * @return \yii\console\Response|\yii\web\Response
+     * @throws \yii\base\InvalidConfigException
+     */
     public function actionAddMembership($groupId)
     {
         $group = Group::findOne($groupId);
@@ -45,6 +50,13 @@ class UserController extends BaseAccountController
     }
 
 
+    /**
+     * @param $groupId
+     * @return \yii\console\Response|\yii\web\Response
+     * @throws \Throwable
+     * @throws \yii\base\InvalidConfigException
+     * @throws \yii\db\StaleObjectException
+     */
     public function actionCancelMembership($groupId)
     {
         $group = Group::findOne($groupId);

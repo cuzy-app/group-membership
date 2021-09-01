@@ -1,9 +1,11 @@
 Changelog
 =========
 
-unpublished
+1.1.1 (September 1, 2021)
 --------------------
 - Enh: More explicit permission title and description
+- Enh: Better presentation (card) of the users groups (in the account settings)
+- Enh: Code enhancements in the Group model (in case of use of the methods with the $user parameter)
 
 
 1.1 (June 14, 2021)
