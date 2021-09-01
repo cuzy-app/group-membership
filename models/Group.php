@@ -68,15 +68,11 @@ class Group extends \humhub\modules\user\models\Group
 
     /**
      * Users are allowed to manage their membership to this group
-     * @return false|int|string
+     * @return boolean
      * @throws \yii\base\InvalidConfigException
      */
 	public function usersManageTheirMembership () {
-		if (Yii::$app->user->isGuest) {
-			return false;
-		}
-		
         $permission = Yii::$app->user->permissionManager->getById('users_manage_their_membership', 'group-membership');
-        return Yii::$app->user->permissionManager->getGroupState($this->id, $permission);
+        return (bool)Yii::$app->user->permissionManager->getGroupState($this->id, $permission);
 	}
 }
