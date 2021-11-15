@@ -9,7 +9,7 @@
 use humhub\widgets\Button;
 use yii\helpers\Html;
 
-/* @var $this \yii\web\View */
+/* @var $this \humhub\modules\ui\view\components\View */
 /* @var $groups humhub\modules\groupMembership\models\Group[] */
 /* @var $groupsCanJoin humhub\modules\groupMembership\models\Group[] */
 ?>

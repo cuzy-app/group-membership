@@ -27,6 +27,7 @@ class User extends \humhub\modules\user\models\User
 
     /**
      * @return Group[]
+     * @throws \yii\base\InvalidConfigException
      */
     public function getGroupsCanJoin()
     {
