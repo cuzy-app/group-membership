@@ -2,19 +2,20 @@
 /**
  * Group membership
  * @link https://github.com/cuzy-app/humhub-modules-group-membership
- * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/main/docs/LICENCE.md
+ * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/master/docs/LICENCE.md
  * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
 namespace humhub\modules\groupMembership\permissions;
 
-use Yii;
+use humhub\libs\BasePermission;
 use humhub\modules\user\models\User;
+use Yii;
 
 /**
  * UsersManageTheirMembership permission allows users to manage their membership to this group
  */
-class UsersManageTheirMembership extends \humhub\libs\BasePermission
+class UsersManageTheirMembership extends BasePermission
 {
     /**
      * @inheritdoc
