@@ -1,6 +1,6 @@
-# Group membership
+# Group Membership
 
-Adds the possibility for certain groups to allow users to become member themselves
+Adds the possibility for certain groups to allow users to become member themselves.
 
 
 ## Overview
@@ -15,16 +15,16 @@ Adds the possibility for certain groups to allow users to become member themselv
 To allow users to become member of a group themselves, go to "Administration" -> "Users" -> "Groups" -> Menu of the group -> "Permissions"
 
 
-## Author
-
-https://www.cuzy.app/
-
-
 ## Repository
 
 https://github.com/cuzy-app/humhub-modules-group-membership
 
 
+## Publisher
+
+[CUZY.APP](https://www.cuzy.app/)
+
+
 ## Licence
 
-https://github.com/cuzy-app/humhub-modules-group-membership/blob/main/docs/LICENCE.md
+[GNU AGPL](https://github.com/cuzy-app/humhub-modules-group-membership/blob/master/docs/LICENCE.md)

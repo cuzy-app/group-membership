@@ -2,7 +2,7 @@
 /**
  * Group membership
  * @link https://github.com/cuzy-app/humhub-modules-group-membership
- * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/main/docs/LICENCE.md
+ * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/master/docs/LICENCE.md
  * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 

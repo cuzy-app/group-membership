@@ -2,14 +2,15 @@
 /**
  * Group membership
  * @link https://github.com/cuzy-app/humhub-modules-group-membership
- * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/main/docs/LICENCE.md
+ * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/master/docs/LICENCE.md
  * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
+use humhub\modules\ui\view\components\View;
 use humhub\widgets\Button;
 use yii\helpers\Html;
 
-/* @var $this \humhub\modules\ui\view\components\View */
+/* @var $this View */
 /* @var $groups humhub\modules\groupMembership\models\Group[] */
 /* @var $groupsCanJoin humhub\modules\groupMembership\models\Group[] */
 ?>
@@ -21,6 +22,7 @@ use yii\helpers\Html;
         flex-wrap: wrap;
         margin-left: 20px;
     }
+
     #user-groups-membership .card {
         min-width: 200px;
         margin: 10px;
@@ -28,6 +30,7 @@ use yii\helpers\Html;
         flex: 1;
         background-color: <?= $this->theme->variable('background-color-secondary') ?>;
     }
+
     #user-groups-membership .card-footer {
         padding-top: 10px;
     }

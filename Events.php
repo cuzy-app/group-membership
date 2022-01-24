@@ -2,15 +2,16 @@
 /**
  * Group membership
  * @link https://github.com/cuzy-app/humhub-modules-group-membership
- * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/main/docs/LICENCE.md
+ * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/master/docs/LICENCE.md
  * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
-namespace  humhub\modules\groupMembership;
+namespace humhub\modules\groupMembership;
 
+use humhub\modules\ui\menu\MenuLink;
+use humhub\modules\user\widgets\AccountMenu;
 use Yii;
 use yii\base\Event;
-use humhub\modules\ui\menu\MenuLink;
 
 class Events
 {
@@ -20,7 +21,7 @@ class Events
      */
     public static function onUserAccountMenuInit(Event $event)
     {
-        /** @var \humhub\modules\user\widgets\AccountMenu $menu */
+        /** @var AccountMenu $menu */
         $menu = $event->sender;
 
         $menu->addEntry(new MenuLink([
