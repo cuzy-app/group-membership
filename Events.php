@@ -30,7 +30,8 @@ class Events
             'label' => Yii::t('GroupMembershipModule.base', 'My groups'),
             'url' => ['/group-membership/user/index'],
             'sortOrder' => 1000,
-            'isActive' => MenuLink::isActiveState('group-membership', 'user')
+            'isActive' => MenuLink::isActiveState('group-membership', 'user'),
+            'isVisible' => true,
         ]));
     }
 }

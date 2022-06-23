@@ -68,7 +68,7 @@ class Group extends \humhub\modules\user\models\Group
         }
 
         // Cannot remove his membership if member of only this group
-        if ($user->getGroups()->count() <= 1) {
+        if ((int)$user->getGroups()->count() <= 1) {
             return false;
         }
 
