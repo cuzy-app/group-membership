@@ -6,6 +6,7 @@
  * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
+use humhub\components\Event;
 use humhub\modules\ui\view\components\View;
 use humhub\widgets\Button;
 use yii\helpers\Html;
@@ -57,13 +58,19 @@ use yii\helpers\Html;
                         </div>
                         <?php if ($group->canSelfRemoveMembership()): ?>
                             <div class="card-footer">
-                                <?= Button::danger(Yii::t('GroupMembershipModule.base', 'Cancel membership'))->link(['cancel-membership', 'groupId' => $group->id])->sm()->confirm() ?>
+                                <?= Button::danger(Yii::t('GroupMembershipModule.base', 'Cancel membership'))->link(['cancel-membership', 'groupId' => $group->id])->confirm() ?>
                             </div>
                         <?php endif; ?>
                     </div>
                 </div>
             <?php endforeach; ?>
         </div>
+
+        <?php
+        $evt = new Event();
+        Event::trigger($this, 'groupMembershipViewAfterMyGroups', $evt);
+        echo $evt->result;
+        ?>
 
         <?php if ($groupsCanJoin): ?>
             <br>
@@ -74,13 +81,13 @@ use yii\helpers\Html;
                     <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
                         <div class="card-panel">
                             <div class="card-header">
-                                <strong class="card-title"><?= Html::encode($group->name); ?></strong>
+                                <strong class="card-title"><?= Html::encode($group->name) ?></strong>
                             </div>
                             <div class="card-body">
-                                <span class="hint-block"><?= Html::encode($group->description); ?></span>
+                                <span class="hint-block"><?= Html::encode($group->description) ?></span>
                             </div>
                             <div class="card-footer">
-                                <?= Button::success(Yii::t('GroupMembershipModule.base', 'Become member'))->link(['add-membership', 'groupId' => $group->id])->sm()->confirm() ?>
+                                <?= Button::success(Yii::t('GroupMembershipModule.base', 'Become member'))->link(['add-membership', 'groupId' => $group->id])->confirm() ?>
                             </div>
                         </div>
                     </div>

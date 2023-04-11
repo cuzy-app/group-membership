@@ -9,6 +9,7 @@
 namespace humhub\modules\groupMembership;
 
 use Yii;
+use yii\helpers\Url;
 
 
 class Module extends \humhub\components\Module
@@ -24,6 +25,14 @@ class Module extends \humhub\components\Module
     public function getDescription()
     {
         return Yii::t('GroupMembershipModule.base', 'Adds the possibility for certain groups to allow users to become member themselves');
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function getConfigUrl()
+    {
+        return Url::to(['/group-membership/config']);
     }
 
     /**

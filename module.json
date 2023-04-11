@@ -4,7 +4,7 @@
     "description": "Adds the possibility for certain groups to allow users to become member themselves.",
     "keywords": [
     ],
-    "version": "1.2",
+    "version": "1.2.1",
     "humhub": {
         "minVersion": "1.8"
     },
