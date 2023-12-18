@@ -41,7 +41,8 @@ class User extends \humhub\modules\user\models\User
                 'group.name' => SORT_ASC,
             ]);
         $groupsCanJoin = [];
-        foreach ($query->all() as $group) {
+        /** @var Group $group */
+        foreach ($query->each() as $group) {
             if ($group->canSelfBecomeMember()) {
                 $groupsCanJoin[] = $group;
             }

@@ -16,7 +16,6 @@ use yii\base\Event;
 class Events
 {
     /**
-     * Remove some entries in the user account menu
      * @param Event $event
      */
     public static function onUserAccountMenuInit(Event $event)
