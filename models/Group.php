@@ -9,6 +9,7 @@
 namespace humhub\modules\groupMembership\models;
 
 use humhub\modules\user\models\User;
+use Throwable;
 use Yii;
 use yii\base\InvalidConfigException;
 
@@ -18,7 +19,6 @@ class Group extends \humhub\modules\user\models\Group
      * User is allowed to become member of this group himself
      * @param null|User $user
      * @return bool
-     * @throws InvalidConfigException
      */
     public function canSelfBecomeMember($user = null)
     {
@@ -39,13 +39,16 @@ class Group extends \humhub\modules\user\models\Group
 
     /**
      * Users are allowed to manage their membership to this group
-     * @return boolean
-     * @throws InvalidConfigException
+     * @return bool
      */
     public function usersManageTheirMembership()
     {
-        $permission = Yii::$app->user->permissionManager->getById('users_manage_their_membership', 'group-membership');
-        return (bool)Yii::$app->user->permissionManager->getGroupState($this->id, $permission);
+        try {
+            $permission = Yii::$app->user->getPermissionManager()->getById('users_manage_their_membership', 'group-membership');
+            return (bool)Yii::$app->user->getPermissionManager()->getGroupState($this->id, $permission);
+        } catch (InvalidConfigException|Throwable $e) {
+            return false;
+        }
     }
 
     /**
