@@ -1,23 +1,23 @@
 {
-    "id": "group-membership",
-    "name": "Group Membership",
-    "description": "Adds the possibility for certain groups to allow users to become member themselves.",
-    "keywords": [
-    ],
-    "version": "1.2.1",
-    "humhub": {
-        "minVersion": "1.8"
-    },
-    "homepage": "https://github.com/cuzy-app/humhub-modules-group-membership",
-    "authors": [
-        {
-            "name": "Marc FARRE",
-            "homepage": "https://marc.fun",
-            "role": "Developer"
-        }
-    ],
-    "screenshots": [
-        "resources/screen_1.png",
-        "resources/screen_2.png"
-    ]
+  "id": "group-membership",
+  "name": "Group Membership",
+  "description": "Adds the possibility for certain groups to allow users to become member themselves.",
+  "keywords": [
+  ],
+  "version": "1.2.2",
+  "humhub": {
+    "minVersion": "1.8"
+  },
+  "homepage": "https://github.com/cuzy-app/humhub-modules-group-membership",
+  "authors": [
+    {
+      "name": "Marc FARRE",
+      "homepage": "https://marc.fun",
+      "role": "Developer"
+    }
+  ],
+  "screenshots": [
+    "resources/screen_1.png",
+    "resources/screen_2.png"
+  ]
 }
