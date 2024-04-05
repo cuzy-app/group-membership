@@ -1,6 +1,10 @@
 Changelog
 =========
 
+Unreleased
+--------------------
+- Chg: Repository URL from https://github.com/cuzy-app/humhub-modules-group-membership to https://github.com/cuzy-app/group-membership
+
 1.2.2 (Feb 29, 2024)
 --------------------
 - Enh: Added config page (for admins)

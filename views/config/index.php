@@ -1,8 +1,8 @@
 <?php
 /**
  * Group membership
- * @link https://github.com/cuzy-app/humhub-modules-group-membership
- * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/master/docs/LICENCE.md
+ * @link https://github.com/cuzy-app/group-membership
+ * @license https://github.com/cuzy-app/group-membership/blob/master/docs/LICENCE.md
  * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
@@ -34,7 +34,7 @@ $module = Yii::$app->getModule('group-membership');
                 <a href="https://www.cuzy.app/checkout/donate/"
                    target="_blank">making a donation</a>
                 or
-                <a href="https://github.com/cuzy-app/humhub-modules-group-membership"
+                <a href="https://github.com/cuzy-app/group-membership"
                    target="_blank">participating in the code</a>.
                 Thanks!
             </div>

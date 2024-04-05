@@ -1,8 +1,8 @@
 <?php
 /**
  * Group membership
- * @link https://github.com/cuzy-app/humhub-modules-group-membership
- * @license https://github.com/cuzy-app/humhub-modules-group-membership/blob/master/docs/LICENCE.md
+ * @link https://github.com/cuzy-app/group-membership
+ * @license https://github.com/cuzy-app/group-membership/blob/master/docs/LICENCE.md
  * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
@@ -70,4 +70,3 @@ class UserController extends BaseAccountController
         return $this->redirect(['index']);
     }
 }
-
