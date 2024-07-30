@@ -29,7 +29,7 @@ use yii\helpers\Html;
         margin: 10px;
         padding: 10px;
         flex: 1;
-        background-color: <?= $this->theme->variable('background-color-secondary') ?>;
+        background-color: var(--background-color-secondary)
     }
 
     #user-groups-membership .card-footer {

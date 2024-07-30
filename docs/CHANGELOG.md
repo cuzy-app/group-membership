@@ -4,6 +4,7 @@ Changelog
 Unreleased
 --------------------
 - Chg: Repository URL from https://github.com/cuzy-app/humhub-modules-group-membership to https://github.com/cuzy-app/group-membership
+- Enh: Use CSS variables to allow compatibility with Dark Mode (see [#7134](https://github.com/humhub/humhub/issues/7143))
 
 1.2.2 (Feb 29, 2024)
 --------------------
@@ -22,7 +23,7 @@ Unreleased
 
 1.1 (June 14, 2021)
 --------------------
-- Enh: As directory module has been disabled in Humhub 1.9, self managing groups is now in the user's account settings
+- Enh: As directory module has been disabled in HumHub 1.9, self managing groups is now in the user's account settings
 - Chg: HumHub min. version increased to 1.8
 
 1.0.4 (December, 16, 2020)
