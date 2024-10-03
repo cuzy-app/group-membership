@@ -11,7 +11,6 @@ namespace humhub\modules\groupMembership;
 use Yii;
 use yii\helpers\Url;
 
-
 class Module extends \humhub\components\Module
 {
     public $resourcesPath = 'resources';
@@ -42,7 +41,7 @@ class Module extends \humhub\components\Module
     {
         if ($contentContainer === null) {
             return [
-                new permissions\UsersManageTheirMembership,
+                new permissions\UsersManageTheirMembership(),
             ];
         }
         return [];

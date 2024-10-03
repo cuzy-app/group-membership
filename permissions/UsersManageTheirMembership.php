@@ -32,7 +32,7 @@ class UsersManageTheirMembership extends BasePermission
      */
     protected $fixedGroups = [
         User::USERGROUP_USER,
-        User::USERGROUP_GUEST
+        User::USERGROUP_GUEST,
     ];
 
     public function __construct($config = [])

@@ -18,7 +18,6 @@ use yii\db\StaleObjectException;
 use yii\web\HttpException;
 use yii\web\Response;
 
-
 class UserController extends BaseAccountController
 {
     /**
