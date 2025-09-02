@@ -8,8 +8,6 @@
 
 namespace humhub\modules\groupMembership\models;
 
-use yii\base\InvalidConfigException;
-
 class User extends \humhub\modules\user\models\User
 {
     /**
@@ -29,7 +27,6 @@ class User extends \humhub\modules\user\models\User
 
     /**
      * @return Group[]
-     * @throws InvalidConfigException
      */
     public function getGroupsCanJoin()
     {

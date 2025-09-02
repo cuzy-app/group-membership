@@ -1,11 +1,12 @@
 Changelog
 =========
 
-Unreleased
+1.3.0 (September 2, 2025)
 --------------------
 - Chg: Repository URL from https://github.com/cuzy-app/humhub-modules-group-membership to https://github.com/cuzy-app/group-membership
 - Enh: Use CSS variables to allow compatibility with Dark Mode (see [#7134](https://github.com/humhub/humhub/issues/7143))
 - Enh: Add GitHub HumHub PHP workflows (tests & CS fixer)
+- Enh: Migration to Bootstrap 5 for HumHub 1.18
 
 1.2.2 (Feb 29, 2024)
 --------------------

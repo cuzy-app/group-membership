@@ -8,8 +8,8 @@
 
 /* @var $this View */
 
+use humhub\components\View;
 use humhub\modules\groupMembership\Module;
-use humhub\modules\ui\view\components\View;
 
 /** @var Module $module */
 $module = Yii::$app->getModule('group-membership');
@@ -18,12 +18,12 @@ $module = Yii::$app->getModule('group-membership');
     <div class="panel panel-default">
         <div class="panel-heading">
             <strong><?= $module->getName() ?></strong>
-            <div class="help-block"><?= $module->getDescription() ?></div>
+            <div class="text-body-secondary"><?= $module->getDescription() ?></div>
         </div>
 
         <div class="panel-body">
 
-            <div class="alert alert-info">
+            <div class="alert alert-info cuzy-free-module-info" role="alert">
                 This module was created and is maintained by
                 <a href="https://www.cuzy.app/"
                    target="_blank">CUZY.APP (view other modules)</a>.

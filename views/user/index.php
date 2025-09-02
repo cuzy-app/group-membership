@@ -7,8 +7,8 @@
  */
 
 use humhub\components\Event;
-use humhub\modules\ui\view\components\View;
-use humhub\widgets\Button;
+use humhub\components\View;
+use humhub\widgets\bootstrap\Button;
 use yii\helpers\Html;
 
 /* @var $this View */
@@ -17,23 +17,8 @@ use yii\helpers\Html;
 ?>
 
 <style>
-    #user-groups-membership .cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 20px;
-    }
-
-    #user-groups-membership .card {
-        min-width: 200px;
-        margin: 10px;
-        padding: 10px;
-        flex: 1;
-        background-color: var(--background-color-secondary)
-    }
-
-    #user-groups-membership .card-footer {
-        padding-top: 10px;
+    .gm-container-cards .card {
+        background: transparent;
     }
 </style>
 
@@ -46,24 +31,26 @@ use yii\helpers\Html;
     <div class="panel-body">
         <h4><?= Yii::t('GroupMembershipModule.base', 'Groups of which I am a member'); ?></h4>
 
-        <div class="row cards">
-            <?php foreach ($groups as $group): ?>
-                <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="card-panel">
-                        <div class="card-header">
-                            <strong class="card-title"><?= Html::encode($group->name); ?></strong>
-                        </div>
-                        <div class="card-body">
-                            <span class="hint-block"><?= Html::encode($group->description); ?></span>
-                        </div>
-                        <?php if ($group->canSelfRemoveMembership()): ?>
-                            <div class="card-footer">
-                                <?= Button::danger(Yii::t('GroupMembershipModule.base', 'Cancel membership'))->link(['cancel-membership', 'groupId' => $group->id])->confirm() ?>
+        <div class="container container-cards gm-container-cards">
+            <div class="row cards">
+                <?php foreach ($groups as $group): ?>
+                    <div class="card col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="card-panel">
+                            <div class="card-header">
+                                <strong class="card-title"><?= Html::encode($group->name); ?></strong>
                             </div>
-                        <?php endif; ?>
+                            <div class="card-body">
+                                <span class="hint-block"><?= Html::encode($group->description); ?></span>
+                            </div>
+                            <?php if ($group->canSelfRemoveMembership()): ?>
+                                <div class="card-footer">
+                                    <?= Button::danger(Yii::t('GroupMembershipModule.base', 'Cancel membership'))->link(['cancel-membership', 'groupId' => $group->id])->confirm() ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
                     </div>
-                </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
+            </div>
         </div>
 
         <?php
@@ -76,22 +63,24 @@ use yii\helpers\Html;
             <br>
             <h4><?= Yii::t('GroupMembershipModule.base', 'Others groups I can join'); ?></h4>
 
-            <div class="row cards">
-                <?php foreach ($groupsCanJoin as $group): ?>
-                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                        <div class="card-panel">
-                            <div class="card-header">
-                                <strong class="card-title"><?= Html::encode($group->name) ?></strong>
-                            </div>
-                            <div class="card-body">
-                                <span class="hint-block"><?= Html::encode($group->description) ?></span>
-                            </div>
-                            <div class="card-footer">
-                                <?= Button::success(Yii::t('GroupMembershipModule.base', 'Become member'))->link(['add-membership', 'groupId' => $group->id])->confirm() ?>
+            <div class="container container-cards gm-container-cards">
+                <div class="row cards">
+                    <?php foreach ($groupsCanJoin as $group): ?>
+                        <div class="card col-xl-3 col-lg-4 col-md-6 col-12">
+                            <div class="card-panel">
+                                <div class="card-header">
+                                    <strong class="card-title"><?= Html::encode($group->name) ?></strong>
+                                </div>
+                                <div class="card-body">
+                                    <span class="hint-block"><?= Html::encode($group->description) ?></span>
+                                </div>
+                                <div class="card-footer">
+                                    <?= Button::success(Yii::t('GroupMembershipModule.base', 'Become member'))->link(['add-membership', 'groupId' => $group->id])->confirm() ?>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </div>
             </div>
         <?php endif; ?>
 

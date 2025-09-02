@@ -55,7 +55,6 @@ class Group extends \humhub\modules\user\models\Group
      * User is allowed to remove his membership himself of this group himself
      * @param null|User $user
      * @return bool
-     * @throws InvalidConfigException
      */
     public function canSelfRemoveMembership($user = null)
     {
