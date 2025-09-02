@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Group membership
  * @link https://github.com/cuzy-app/group-membership
