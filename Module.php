@@ -13,9 +13,6 @@ use yii\helpers\Url;
 
 class Module extends \humhub\components\Module
 {
-    public $resourcesPath = 'resources';
-
-
     public function getName()
     {
         return Yii::t('GroupMembershipModule.base', 'Group membership');

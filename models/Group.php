@@ -8,6 +8,7 @@
 
 namespace humhub\modules\groupMembership\models;
 
+use humhub\libs\BasePermission;
 use humhub\modules\user\models\User;
 use Throwable;
 use Yii;
@@ -45,7 +46,7 @@ class Group extends \humhub\modules\user\models\Group
     {
         try {
             $permission = Yii::$app->user->getPermissionManager()->getById('users_manage_their_membership', 'group-membership');
-            return (bool)Yii::$app->user->getPermissionManager()->getGroupState($this->id, $permission);
+            return Yii::$app->user->getPermissionManager()->getGroupState($this->id, $permission) === BasePermission::STATE_ALLOW;
         } catch (InvalidConfigException|Throwable $e) {
             return false;
         }
