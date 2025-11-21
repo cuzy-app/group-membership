@@ -48,7 +48,7 @@ class Group extends \humhub\modules\user\models\Group
         try {
             $permission = Yii::$app->user->getPermissionManager()->getById('users_manage_their_membership', 'group-membership');
             return Yii::$app->user->getPermissionManager()->getGroupState($this->id, $permission) === BasePermission::STATE_ALLOW;
-        } catch (InvalidConfigException|Throwable $e) {
+        } catch (InvalidConfigException|Throwable) {
             return false;
         }
     }
