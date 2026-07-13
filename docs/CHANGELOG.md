@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.4.0 (Unreleased)
+------------------
+- Fix: Compatibility with HumHub 1.19
+
 1.3.0 (September 2, 2025)
 --------------------
 - Chg: Repository URL from https://github.com/cuzy-app/humhub-modules-group-membership to https://github.com/cuzy-app/group-membership

@@ -4,10 +4,10 @@
     "description": "Adds the possibility for certain groups to allow users to become member themselves.",
     "keywords": [
     ],
-    "version": "1.3.0",
+    "version": "1.4.0",
     "humhub": {
         "minVersion": "1.18",
-        "maxVersion": "1.18"
+        "maxVersion": "1.19"
     },
     "homepage": "https://github.com/cuzy-app/group-membership",
     "authors": [
