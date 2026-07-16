@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.4.0 (Unreleased)
+1.4.0 (July 16, 2026)
 ------------------
 - Fix: Compatibility with HumHub 1.19
 
