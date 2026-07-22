@@ -1,6 +1,11 @@
 {
   "name": "cuzy-app/group-membership",
   "type": "humhub-module",
+  "autoload": {
+    "psr-4": {
+      "humhub\\modules\\groupMembership\\": ""
+    }
+  },
   "config": {
     "platform": {
       "php": "8.2"
