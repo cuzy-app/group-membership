@@ -28,4 +28,4 @@ https://github.com/cuzy-app/group-membership
 
 ## Licence
 
-[GNU AGPL](https://github.com/cuzy-app/group-membership/blob/master/docs/LICENCE.md)
+[GNU AGPL](https://github.com/cuzy-app/group-membership/blob/main/docs/LICENCE.md)
