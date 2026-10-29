@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.4.1 (Unreleased)
+------------------
+- Fix: Reviewed French, German, Spanish, Portuguese, Brazilian Portuguese, Italian and Dutch translations (wrong meanings, HumHub terminology, consistent wording and form of address); Traditional Chinese is now actually in Traditional Chinese and Norwegian Nynorsk in Nynorsk (they were copies of Simplified Chinese and Bokmål)
+
 1.4.0 (July 16, 2026)
 ------------------
 - Fix: Compatibility with HumHub 1.19
