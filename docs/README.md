@@ -29,3 +29,7 @@ https://github.com/cuzy-app/group-membership
 ## Licence
 
 [GNU AGPL](https://github.com/cuzy-app/group-membership/blob/master/docs/LICENCE.md)
+
+## Hosting
+
+This module is installed and updated for you on [CUZY Hosting](https://www.cuzy.app/hosting), managed HumHub hosting with every CUZY module included.
