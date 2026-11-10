@@ -24,7 +24,7 @@ https://github.com/cuzy-app/group-membership
 
 ## Publisher
 
-[CUZY.APP](https://www.cuzy.app/)
+[CUZY.app](https://www.cuzy.app)
 
 ## Licence
 
